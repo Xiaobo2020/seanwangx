@@ -84,7 +84,7 @@ foo().then(function (even) {
 曾经我和一个朋友讨论是该使用Callback还是Promise，他给出的理由很有意思：Callback是将函数的执行权给了异步操作，而Promise则保证了函数运行的控制权。假如我们将异步作为主程序的一个分支，那么Callback只是在这个分支上规定了两种结果所导致的不同运行结果，实际上分支依旧是分支，只是结果能影响主程序。而Promise似乎做到了将分支重新归并到主程序，当然根据成功或是失败规定了归并的方式——then或是catch。
 
 ## 简单实现
-探究Promise的深层逻辑会很有意思，但在此之前不妨自己思考模拟实现一个类Promise对象，下面的23行代码就是我的成功：
+探究Promise的深层逻辑会很有意思，但在此之前不妨自己思考模拟实现一个类Promise对象，下面的23行代码就是我的成果：
 ```javascript
 function MyPromise (executor) {
   let status = 'pending'
