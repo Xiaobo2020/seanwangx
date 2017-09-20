@@ -73,7 +73,7 @@ const LEVEL = {
 
 ```javascript
 function Log4JS (lvNm = TYPE.WARN) {
-  lvNm = typeof lvNm === 'string' ? (TYPE[lvNm.toUpperCase()] || TYPE.WARN) : TYPE.WARN
+  lvNm = TYPE[String(lvNm).toUpperCase()] || TYPE.WARN
   let level = LEVEL[lvNm]
   console.log(`Log4JS Level: ${lvNm}`)
 }
