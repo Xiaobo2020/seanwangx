@@ -1,9 +1,9 @@
 ---
-title: JS中的私有性
+title: JavaScript中的私有性
 categories:
   - frontend
 tags:
-  - JavaScript
   - Private
 date: 2017-09-16 22:32:01
 ---
+
