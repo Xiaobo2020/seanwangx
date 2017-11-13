@@ -1,5 +1,5 @@
 ---
-title: DataStruct导论
+title: DataStruct绪论
 categories:
   - struggle
 tags:
